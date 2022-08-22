@@ -7,10 +7,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Player Select</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .display {
+            display: flex;
+        }
+    </style>
 </head>
 
 <body>
     <header class="text-center bg-blue-400 h-20 pt-8">Select Your Best Five</header>
+
+    <main class=" mx-auto">
+        <section class="mt-6 bg-green-500">
+            <div class="display">
+                <div class="card-group w-3/4 grid grid-cols-3 ">
+                    <div class="card m-2 border">
+                        <img src="images/img-1.jpg" class="card-img-top h-20 w-32 mx-auto" alt="...">
+                        <div class="">
+                            <h5 class="text-center mb-4 font-semibold">Lionel Messi</h5>
+                            <div class="text-center mb-2">
+                                <button
+                                    class="bg-amber-600 px-8 py-1 text-white font-medium rounded-lg hover:bg-sky-700">Select
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card m-2 border">
+                        <img src="images/img-2.jpg" class="card-img-top h-20 w-32 mx-auto" alt="...">
+                        <div class="">
+                            <h5 class="text-center mb-4 font-semibold">Naymer Jr</h5>
+                            <div class="text-center mb-2">
+                                <button
+                                    class="bg-amber-600 px-8 py-1 text-white font-medium rounded-lg hover:bg-sky-700">Select
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card m-2 border">
+                        <img src="images/img-3.jpg" class="card-img-top h-20 w-32 mx-auto" alt="...">
+                        <div class="">
+                            <h5 class="text-center mb-4 font-semibold">Kylian Mbapper</h5>
+                            <div class="text-center mb-2">
+                                <button
+                                    class="bg-amber-600  px-8 py-1 text-white font-medium rounded-lg hover:bg-sky-700">Select
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card m-2 border">
+                        <img src="images/img-4.jpg" class="card-img-top h-20 w-32 mx-auto" alt="...">
+                        <div class="">
+                            <h5 class="text-center mb-4 font-semibold">Ronaldo</h5>
+                            <div class="text-center mb-2">
+                                <button
+                                    class="bg-amber-600 px-8 py-1 text-white font-medium rounded-lg hover:bg-sky-700">Select
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card m-2 border">
+                        <img src="images/img-5.jpg" class="card-img-top h-20 w-32 mx-auto" alt="...">
+                        <div class="">
+                            <h5 class="text-center mb-4 font-semibold">Sergio Ramos</h5>
+                            <div class="text-center mb-2">
+                                <button
+                                    class="bg-amber-600 px-8 py-1 text-white font-medium rounded-lg hover:bg-sky-700">Select
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card m-2 border">
+                        <img src="images/img-6.jpg" class="card-img-top h-20 w-32 mx-auto" alt="...">
+                        <div class="">
+                            <h5 class="text-center mb-4 font-semibold">Renato Sanches</h5>
+                            <div class="text-center mb-2">
+                                <button
+                                    class="bg-amber-600 px-8 py-1 text-white font-medium rounded-lg hover:bg-sky-700">Select
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div>
+                    <div class="text-center m-2 border h-44 ">
+                        <h1 class="px-8">Selected-V </h1>
+                    </div>
+                    <div class="border text-center m-2">
+                        <h1 class="">Budget</h1>
+                        <div class="grid grid-cols-2 mb-2">
+                            <span class="text-sm">Per Player :</span>
+                            <input class="mx-2" type="text" placeholder=" $">
+                        </div>
+                        <div class="text-center mb-2 bg-amber-600 mx-2">
+                            <button class=" hover:bg-sky-700">Calculate
+                            </button>
+                        </div>
+                        <div class="grid grid-cols-2 mb-2">
+                            <span class="text-sm">Player Expenses :</span>
+                            <input class="mx-2" type="text" placeholder=" $">
+                        </div>
+                        <div class="grid grid-cols-2 mb-2">
+                            <span class="text-sm">Manager :</span>
+                            <input class="mx-2" type="text" placeholder=" 2000">
+                        </div>
+                        <div class="grid grid-cols-2 mb-2">
+                            <span class="text-sm">Coach :</span>
+                            <input class="mx-2" type="text" placeholder=" 4000">
+                        </div>
+                        <div class="text-center mb-2 bg-amber-600 mx-2">
+                            <button class=" hover:bg-sky-700">Calculate Total
+                            </button>
+                        </div>
+                        <div class="grid grid-cols-2 mb-2">
+                            <span class="text-sm">Total :</span>
+                            <input class="mx-2" type="text" placeholder=" $">
+                        </div>
+                    </div>
+                    <!-- <div class="border text-center">
+                        <h1 class="">Budget</h1>
+                        <div class="flex">
+                            <h6 class="">Per Player</h6>
+                            <input class="" type="text" placeholder="$">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+<script src="js/calculate-total.js"></script>
 </body>
 
 </html>
