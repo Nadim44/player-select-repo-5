@@ -98,31 +98,32 @@
                         <h1 class="">Budget</h1>
                         <div class="grid grid-cols-2 mb-2">
                             <span class="text-sm">Per Player :</span>
-                            <input class="mx-2" type="text" placeholder=" $">
+                            <h3>$<span id="per-player-cost">1000</span></h3>
                         </div>
                         <div class="text-center mb-2 bg-amber-600 mx-2">
-                            <button class=" hover:bg-sky-700">Calculate
+                            <button id="player-cost" class=" hover:bg-sky-700">Calculate
                             </button>
                         </div>
                         <div class="grid grid-cols-2 mb-2">
                             <span class="text-sm">Player Expenses :</span>
-                            <input class="mx-2" type="text" placeholder=" $">
+                            <h2 class="">$<span id="total-player-cost"></span></h2>
+
                         </div>
                         <div class="grid grid-cols-2 mb-2">
                             <span class="text-sm">Manager :</span>
-                            <input class="mx-2" type="text" placeholder=" 2000">
+                            <input id="manager-cost" class="mx-2" type="text" placeholder=" $ Enter Amount">
                         </div>
                         <div class="grid grid-cols-2 mb-2">
                             <span class="text-sm">Coach :</span>
-                            <input class="mx-2" type="text" placeholder=" 4000">
+                            <input id="coach-cost" class="mx-2" type="text" placeholder=" $ Enter Amount">
                         </div>
                         <div class="text-center mb-2 bg-amber-600 mx-2">
-                            <button class=" hover:bg-sky-700">Calculate Total
+                            <button id="calculate-Total" class=" hover:bg-sky-700">Calculate Total
                             </button>
                         </div>
                         <div class="grid grid-cols-2 mb-2">
-                            <span class="text-sm">Total :</span>
-                            <input class="mx-2" type="text" placeholder=" $">
+                            <h1 class="text-sm">Total :</h1>
+                            <h2>$<span id="total-budget"></span></h2>
                         </div>
                     </div>
                     <!-- <div class="border text-center">
@@ -138,7 +139,8 @@
 
     </main>
 
-<script src="js/calculate-total.js"></script>
+    <script src="js/calculate-total.js"></script>
+    <script src="js/function.js"></script>
 </body>
 
 </html>
