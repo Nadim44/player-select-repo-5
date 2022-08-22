@@ -26,7 +26,7 @@
                         <div class="">
                             <h5 class="text-center mb-4 font-semibold">Lionel Messi</h5>
                             <div class="text-center mb-2">
-                                <button
+                                <button id="player-1"
                                     class="bg-amber-600 px-8 py-1 text-white font-medium rounded-lg hover:bg-sky-700">Select
                                 </button>
                             </div>
@@ -37,7 +37,7 @@
                         <div class="">
                             <h5 class="text-center mb-4 font-semibold">Naymer Jr</h5>
                             <div class="text-center mb-2">
-                                <button
+                                <button id="player-2"
                                     class="bg-amber-600 px-8 py-1 text-white font-medium rounded-lg hover:bg-sky-700">Select
                                 </button>
                             </div>
@@ -48,7 +48,7 @@
                         <div class="">
                             <h5 class="text-center mb-4 font-semibold">Kylian Mbapper</h5>
                             <div class="text-center mb-2">
-                                <button
+                                <button id="player-3"
                                     class="bg-amber-600  px-8 py-1 text-white font-medium rounded-lg hover:bg-sky-700">Select
                                 </button>
                             </div>
@@ -59,7 +59,7 @@
                         <div class="">
                             <h5 class="text-center mb-4 font-semibold">Ronaldo</h5>
                             <div class="text-center mb-2">
-                                <button
+                                <button id="player-4"
                                     class="bg-amber-600 px-8 py-1 text-white font-medium rounded-lg hover:bg-sky-700">Select
                                 </button>
                             </div>
@@ -70,7 +70,7 @@
                         <div class="">
                             <h5 class="text-center mb-4 font-semibold">Sergio Ramos</h5>
                             <div class="text-center mb-2">
-                                <button
+                                <button id="player-5"
                                     class="bg-amber-600 px-8 py-1 text-white font-medium rounded-lg hover:bg-sky-700">Select
                                 </button>
                             </div>
@@ -81,7 +81,7 @@
                         <div class="">
                             <h5 class="text-center mb-4 font-semibold">Renato Sanches</h5>
                             <div class="text-center mb-2">
-                                <button
+                                <button id="player-6"
                                     class="bg-amber-600 px-8 py-1 text-white font-medium rounded-lg hover:bg-sky-700">Select
                                 </button>
                             </div>
@@ -91,8 +91,11 @@
                 </div>
 
                 <div>
-                    <div class="text-center m-2 border h-44 ">
-                        <h1 class="px-8">Selected-V </h1>
+                    <div id="container" class=" text-center m-2 border h-44 ">
+                        <h1 class="px-8 ">Selected-V </h1>
+                        <ul id="select-players">
+
+                        </ul>
                     </div>
                     <div class="border text-center m-2">
                         <h1 class="">Budget</h1>
@@ -139,8 +142,11 @@
 
     </main>
 
+
     <script src="js/calculate-total.js"></script>
     <script src="js/function.js"></script>
+    <script src="js/players.js"></script>
+
 </body>
 
 </html>
