@@ -3,21 +3,19 @@ const playerNameArray = [];
 function display() {
     const playersList = document.getElementById('player-list')
     playersList.innerHTML = '';
+
     for (let i = 0; i < playerNameArray.length; i++) {
+        if (playersList.childElementCount > 4) {
+            alert('You can not add more than five');
+            return;
+        }
         const name = playerNameArray[i].playerName;
         const ul = document.createElement('ul');
         ul.innerHTML = `
         <li><span>${i + 1}</span>. <span>${name}</span></li> 
         `;
         playersList.appendChild(ul);
-        if (playersList.childElementCount > 4) {
-            alert('You can not add more than five');
-            return;
-        }
-        // if (document.getElementById('player-list').childElementCount > 4) {
-        //     alert('Limit Excedded')
-        //     return false;
-        // }
+
 
     }
 
@@ -31,4 +29,5 @@ function addToList(element) {
     }
     playerNameArray.push(nameObject);
     display(playerNameArray);
+    element.disabled = true;
 }
