@@ -5,17 +5,17 @@ function display() {
     playersList.innerHTML = '';
 
     for (let i = 0; i < playerNameArray.length; i++) {
-        if (playersList.childElementCount > 4) {
-            alert('You can not add more than five');
-            return;
-        }
+
         const name = playerNameArray[i].playerName;
         const ul = document.createElement('ul');
         ul.innerHTML = `
         <li><span>${i + 1}</span>. <span>${name}</span></li> 
         `;
         playersList.appendChild(ul);
-
+        if (playersList.childElementCount > 4) {
+            alert('You can not add more than five');
+            return;
+        }
 
     }
 
