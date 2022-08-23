@@ -39,7 +39,4 @@ document.getElementById('player-cost').addEventListener('click', function () {
         totalBudgetCost.innerText = totalBudget
 
     })
-
-
-
 })

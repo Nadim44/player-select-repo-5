@@ -1,46 +1,26 @@
 
-document.getElementById('player-1').addEventListener('click', function () {
-    const selectPlayer = document.getElementById('select-players');
-    const li = document.createElement('li')
-    li.innerText = 'Lionel Messi'
-    selectPlayer.appendChild(li)
-})
-document.getElementById('player-2').addEventListener('click', function () {
-    const selectPlayer = document.getElementById('select-players');
-    const li = document.createElement('li')
-    li.innerText = 'Naymer Jr'
-    selectPlayer.appendChild(li)
-})
-document.getElementById('player-3').addEventListener('click', function () {
-    const selectPlayer = document.getElementById('select-players');
-    const li = document.createElement('li')
-    li.innerText = 'Kylian Mbappe'
-    selectPlayer.appendChild(li)
-})
-document.getElementById('player-4').addEventListener('click', function () {
-    const selectPlayer = document.getElementById('select-players');
-    const li = document.createElement('li')
-    li.innerText = 'Ronaldo'
-    selectPlayer.appendChild(li)
-})
-document.getElementById('player-5').addEventListener('click', function () {
-    const selectPlayer = document.getElementById('select-players');
-    const li = document.createElement('li')
-    li.innerText = 'Sergio Ramos'
-    selectPlayer.appendChild(li)
-})
-document.getElementById('player-6').addEventListener('click', function () {
-    const selectPlayer = document.getElementById('select-players');
-    const li = document.createElement('li')
-    li.innerText = 'Renato Sanches'
-    selectPlayer.appendChild(li)
-})
+const playerNameArray = [];
 
-// const selectPlayer = document.getElementById('select-players');
-// const player = selectPlayer.length
-// console.log(player)
+function display() {
+    const selectPlayer = document.getElementById('player-list')
+    selectPlayer.innerHTML = '';
+    for (let i = 0; i < playerNameArray.length; i++) {
+        const name = playerNameArray[i].playerName;
+        const ul = document.createElement('ul');
+        ul.innerHTML = `
+        <li><span>${i + 1}</span>. <span>${name}</span></li> 
+        `;
+        selectPlayer.appendChild(ul);
+    }
+}
 
-const ul = document.querySelectorAll('#select-players')
-console.log(ul)
+function addToList(element) {
+    const playerName = element.parentNode.parentNode.children[0].innerText;
+    // console.log(playerName)
+    const nameObject = {
+        playerName: playerName
+    }
+    playerNameArray.push(nameObject);
+    display(playerNameArray);
 
-
+}

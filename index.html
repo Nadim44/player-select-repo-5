@@ -26,10 +26,13 @@
                         <div class="">
                             <h5 class="text-center mb-4 font-semibold">Lionel Messi</h5>
                             <div class="text-center mb-2">
-                                <button id="player-1"
+                                <button onclick="addToList(this)"
                                     class="bg-amber-600 px-8 py-1 text-white font-medium rounded-lg hover:bg-sky-700">Select
                                 </button>
                             </div>
+                            <!-- <div class="card-actions justify-end">
+                                <button class="btn btn-primary" onclick="addToCart(this)">Buy Now </button>
+                            </div> -->
                         </div>
                     </div>
                     <div class="card m-2 border">
@@ -37,7 +40,7 @@
                         <div class="">
                             <h5 class="text-center mb-4 font-semibold">Naymer Jr</h5>
                             <div class="text-center mb-2">
-                                <button id="player-2"
+                                <button onclick="addToList(this)"
                                     class="bg-amber-600 px-8 py-1 text-white font-medium rounded-lg hover:bg-sky-700">Select
                                 </button>
                             </div>
@@ -48,7 +51,7 @@
                         <div class="">
                             <h5 class="text-center mb-4 font-semibold">Kylian Mbapper</h5>
                             <div class="text-center mb-2">
-                                <button id="player-3"
+                                <button onclick="addToList(this)"
                                     class="bg-amber-600  px-8 py-1 text-white font-medium rounded-lg hover:bg-sky-700">Select
                                 </button>
                             </div>
@@ -59,7 +62,7 @@
                         <div class="">
                             <h5 class="text-center mb-4 font-semibold">Ronaldo</h5>
                             <div class="text-center mb-2">
-                                <button id="player-4"
+                                <button onclick="addToList(this)"
                                     class="bg-amber-600 px-8 py-1 text-white font-medium rounded-lg hover:bg-sky-700">Select
                                 </button>
                             </div>
@@ -70,7 +73,7 @@
                         <div class="">
                             <h5 class="text-center mb-4 font-semibold">Sergio Ramos</h5>
                             <div class="text-center mb-2">
-                                <button id="player-5"
+                                <button onclick="addToList(this)"
                                     class="bg-amber-600 px-8 py-1 text-white font-medium rounded-lg hover:bg-sky-700">Select
                                 </button>
                             </div>
@@ -81,7 +84,7 @@
                         <div class="">
                             <h5 class="text-center mb-4 font-semibold">Renato Sanches</h5>
                             <div class="text-center mb-2">
-                                <button id="player-6"
+                                <button onclick="addToList(this)"
                                     class="bg-amber-600 px-8 py-1 text-white font-medium rounded-lg hover:bg-sky-700">Select
                                 </button>
                             </div>
@@ -92,10 +95,11 @@
 
                 <div>
                     <div id="container" class=" text-center m-2 border h-44 ">
-                        <h1 class="px-8 ">Selected-V </h1>
-                        <ul id="select-players">
+                        <!-- <h1 class="px-8 ">Selected-V </h1> -->
+                        <h1 class="text-xl">Total added product</h1>
+                        <div id="player-list" class="overflow-x-auto">
 
-                        </ul>
+                        </div>
                     </div>
                     <div class="border text-center m-2">
                         <h1 class="">Budget</h1>
